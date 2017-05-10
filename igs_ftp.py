@@ -36,7 +36,7 @@ def CODE_rapid_files(dt, prefixdir=""):
 
     """
     server = "ftp.unibe.ch"
-    remotedir = "aiub/CODE/%s/" % (dt.year)
+    remotedir = "/CODE/%s/" % (dt.year)
     week = gpstime.gpsWeek( dt.year, dt.month, dt.day )
     dow  =  gpstime.dayOfWeek( dt.year, dt.month, dt.day )
     clk = "COD%s%s.CLK.Z" % ( week,  dow )
