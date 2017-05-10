@@ -116,7 +116,7 @@ def run_ppp(rinexobs, rinexnav, rapid=True, prefixdir=os.getcwd(), coordtype=Non
         coordopt = " -e "
     else:
         # Default olarak enlem/boylam
-        coordopt = " -a "
+        coordopt = "  "
 
     if not output:
         subprocess.call("rnx2rtkp.exe" +' -p 7 ' + coordopt + " " + rinexobs + " " + rinexnav + " " + \
